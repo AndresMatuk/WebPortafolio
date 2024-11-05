@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ include file="/assets/js/context-root.jsp" %>
+<%@ include file="/assets/js/context-root.jsp" %> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,9 +14,9 @@
     <img src="https://i.pinimg.com/736x/60/39/ba/6039ba4cea9fec239eb9a6e49866e83e.jpg" alt="Small Icon" class="small-icon" />
   </div>
 
- <div class="content-section" id="content-section">
+  <div class="content-section" id="content-section">
     <h1 class="nombre">Andres Camilo<br> Matuk Avendaño</h1>
-    <h2 class="subtitulo">Tecnólogo en Programación de Software</h2>
+    <h2>Tecnólogo en Programación de Software</h2>
     <div class="buttons">
         <button>GitHub</button>
         <button type="button" onclick="GetAbout()">Sobre Mi</button>
@@ -25,6 +25,6 @@
     </div>
 </div>
 </div>
-
+ <script src="<%=request.getContextPath()%>/assets/js/script.js"></script>
 </body>
 </html>

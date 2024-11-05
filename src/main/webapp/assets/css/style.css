@@ -1,14 +1,46 @@
 @font-face {
     font-family: 'Hero';
-    src: url('../fonts/Hero New Bold.otf');
+    src: url('../fonts/Hero New Bold.otf') format("otf");
     font-weight: bold;
     font-style: bold;
 }
 @font-face {
     font-family: 'Hero-Regular';
-    src: url('../fonts/Hero New Regular.otf');
-    font-weight: bold;
-    font-style: bold;
+    src: url('../fonts/Hero New Regular.otf') format("otf");
+    font-weight: Regular;
+    font-style: Regular;
+}
+
+.scroll-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    height: 100vh;
+}
+.scroll-container::-webkit-scrollbar {
+    display: none; 
+}
+
+.scroll-container {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+.welcome-container, .new-section {
+    scroll-snap-align: start;
+    height: 100vh;
+}
+.new-section {
+	background-color: #ffffff;
+
+	}
+.nav-bar a {
+    margin: 0 15px;
+    color: #1E1E1E;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
 }
 
 
@@ -21,10 +53,11 @@ body{
   	font-weight: bold;
   	color: #1E1E1E;
   	font-size:90px;
+  	text-align:left;
   }
 .subtitulo {
       font-family:'Hero-Regular';
-  	  font-weight: bold;
+  	  font-weight: Regular;
       color: #6c757d;
       margin-bottom: 1.5rem;
       font-size:30px;
@@ -92,4 +125,30 @@ body{
       }
     }
   }
+}
+.content{
+	background-color: #ffffff;
+	text-decoration: none;
+}
+.p {
+	scroll-snap-align: start;
+	background-color: #ffffff;
+}
+.footer{
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    scroll-snap-align: start;
+}
+
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
