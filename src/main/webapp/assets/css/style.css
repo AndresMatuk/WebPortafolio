@@ -24,27 +24,13 @@
     -ms-overflow-style: none;  
     scrollbar-width: none;  
 }
-.welcome-container, .new-section {
+.welcome-container {
     scroll-snap-align: start;
     height: 100vh;
 }
-.new-section {
-	background-color: #ffffff;
-
-	}
-.nav-bar a {
-    margin: 0 15px;
-    color: #1E1E1E;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-.nav-bar a:hover {
-    text-decoration: underline;
-}
-
 
 body{
+	
   background-color: #262323;
 }
 
@@ -126,14 +112,10 @@ body{
     }
   }
 }
-.content{
+.content-varied-section {
 	background-color: #ffffff;
-	text-decoration: none;
-}
-.p {
-	scroll-snap-align: start;
-	background-color: #ffffff;
-}
+
+	}
 .footer{
     background-color: #222;
     color: #ccc;

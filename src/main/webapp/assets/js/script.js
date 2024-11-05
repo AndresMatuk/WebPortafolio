@@ -28,3 +28,13 @@ function loadContent(url, elementId) {
   function GetContact() {
        loadContent("/views/contact/contact.jsp", "content-section");
    }
+   function GetProjects() {
+       loadContent("/views/projects/projects.jsp", "content-varied-section");
+     }
+	
+   function GetJourney() {
+	   loadContent("/views/journey/journey.jsp", "content-varied-section");
+	   }
+   function GetTechnologies() {
+	   loadContent("/views/technologies/technologies.jsp", "content-varied-section");
+	}
